@@ -1,0 +1,157 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.let-space {
+  letter-spacing: 3px;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+}
+
+body .card {
+  min-width: 30%;
+  min-height: 100vh;
+  background: url(/images/bg-main-desktop.png) no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body .card .front {
+  min-width: 100%;
+  min-height: 25%;
+  background-image: url(/images/bg-card-front.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-left: 15vw;
+  margin-bottom: 1.5rem;
+  padding: 3vw;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+body .card .front img {
+  width: 84px;
+  height: 47px;
+  margin-bottom: 3.5rem;
+}
+
+body .card .front .card-number {
+  font-size: 1.8rem;
+}
+
+body .card .front div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+body .card .front div .card-owner, body .card .front div .card-expire {
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+body .card .back {
+  min-width: 100%;
+  min-height: 25%;
+  background-image: url(/images/bg-card-back.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-left: 24vw;
+  position: relative;
+}
+
+body .card .back p {
+  position: absolute;
+  top: 44.5%;
+  left: 75%;
+  color: white;
+}
+
+body .card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 18rem;
+  padding-right: 11rem;
+  gap: 1rem;
+  min-width: 65%;
+}
+
+body .card-info label {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+body .card-info input {
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid #dedddf;
+  font-family: inherit;
+}
+
+body .card-info button {
+  width: 100%;
+  padding-block: 1rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  color: white;
+  background: #21092f;
+  transition: all 0.4s;
+  font-size: inherit;
+}
+
+body .card-info button:hover {
+  cursor: pointer;
+  background: white;
+  color: #21092f;
+  border: 1px solid #21092f;
+}
+
+body .card-info .exp-date-cvc {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+body .card-info .exp-date-cvc .exp-date {
+  display: flex;
+  flex-direction: column;
+}
+
+body .card-info .exp-date-cvc .exp-date label {
+  margin-bottom: 1rem;
+}
+
+body .card-info .exp-date-cvc .exp-date .exp-date-input {
+  display: flex;
+  gap: 0.6rem;
+}
+
+body .card-info .exp-date-cvc .exp-date .exp-date-input input {
+  width: 35%;
+}
+
+body .card-info .cvc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

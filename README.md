@@ -26,18 +26,11 @@ Users should be able to:
 
 #### Desktop View
 
-<img src="./images/interactive-rating-component-desktop.png" alt="Desktop View">
 
-<img src="./images/interactive-rating-component-desktop-2.png" alt="Desktop View 2">
 
 #### Mobile View
 
-<img src="./images/interactive-rating-component-mobile.png" alt="Mobile View">
 
-<br>
-<br>
-
-<img src="./images/interactive-rating-component-mobile-2.png" alt="Mobile View">
 
 ### Links
 

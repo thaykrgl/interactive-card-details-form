@@ -12,6 +12,17 @@ img{
   letter-spacing: 3px;
 }
 
+.warning{
+  font-size: 12px;
+  color: hsl(0, 100%, 66%);
+  margin-top: 0.3rem ;
+}
+
+input:focus{
+  border-color: hsl(249, 99%, 64%) !important;
+  border-width: 2px !important;
+}
+
 body {
   font-family: "Space Grotesk", sans-serif;
   font-size: 18px;
@@ -107,6 +118,7 @@ body {
       outline: none;
       border: 1px solid hsl(270, 3%, 87%);
       font-family: inherit;
+      font-size: 16px;
     }
 
     button{
@@ -130,8 +142,8 @@ body {
 
     .exp-date-cvc{
       display: flex;
-      justify-content: space-between;
-      margin-bottom: 2rem;
+      gap: 1.5rem;
+      margin-bottom: 0.8rem;
 
       .exp-date{
         display: flex;
@@ -146,7 +158,7 @@ body {
           gap: 0.6rem;
           
           input{
-            width: 35%;
+            width: 90%;
           }
         } 
       }

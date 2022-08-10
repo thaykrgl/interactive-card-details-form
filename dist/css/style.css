@@ -12,6 +12,17 @@ img {
   letter-spacing: 3px;
 }
 
+.warning {
+  font-size: 12px;
+  color: #ff5252;
+  margin-top: 0.3rem;
+}
+
+input:focus {
+  border-color: #6448fe !important;
+  border-width: 2px !important;
+}
+
 body {
   font-family: "Space Grotesk", sans-serif;
   font-size: 18px;
@@ -105,6 +116,7 @@ body .card-info input {
   outline: none;
   border: 1px solid #dedddf;
   font-family: inherit;
+  font-size: 16px;
 }
 
 body .card-info button {
@@ -128,8 +140,8 @@ body .card-info button:hover {
 
 body .card-info .exp-date-cvc {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 2rem;
+  gap: 1.5rem;
+  margin-bottom: 0.8rem;
 }
 
 body .card-info .exp-date-cvc .exp-date {
@@ -147,7 +159,7 @@ body .card-info .exp-date-cvc .exp-date .exp-date-input {
 }
 
 body .card-info .exp-date-cvc .exp-date .exp-date-input input {
-  width: 35%;
+  width: 90%;
 }
 
 body .card-info .cvc {

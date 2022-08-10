@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-img {
+img, input {
   max-width: 100%;
 }
 
@@ -75,7 +75,7 @@ body .card .front img {
 }
 
 body .card .front .card-number {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
 }
 
 body .card .front div {
@@ -102,9 +102,10 @@ body .card .back {
 
 body .card .back p {
   position: absolute;
-  top: 44.5%;
-  left: 75%;
+  top: 45.5%;
+  left: 78%;
   color: white;
+  font-size: 15px;
 }
 
 body .card-info {
@@ -167,7 +168,6 @@ body .card-info .exp-date-cvc .exp-date label {
 
 body .card-info .exp-date-cvc .exp-date .exp-date-input {
   display: flex;
-  gap: 0.6rem;
 }
 
 body .card-info .exp-date-cvc .exp-date .exp-date-input input {
@@ -177,4 +177,96 @@ body .card-info .exp-date-cvc .exp-date .exp-date-input input {
 body .card-info .cvc label {
   display: inline-block;
   margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1310px) {
+  .cvc {
+    width: 180px;
+  }
+  body .card .front .card-number {
+    font-size: 1.2rem;
+  }
+  body .card-info .exp-date-cvc {
+    gap: 0.4rem;
+  }
+}
+
+@media screen and (max-width: 1210px) {
+  body .card-info {
+    padding-left: 16rem;
+    padding-right: 10rem;
+  }
+}
+
+@media screen and (max-width: 1135px) {
+  body .card-info {
+    padding-left: 13rem;
+    padding-right: 7rem;
+  }
+  body .card .front .card-number {
+    font-size: 1rem;
+  }
+  body .card .front div .card-owner, body .card .front div .card-expire {
+    font-size: 13px;
+  }
+  body .card .front img {
+    margin-bottom: 2rem;
+    margin-top: 1.2rem;
+  }
+  body .card .back p {
+    top: 45.5%;
+    left: 77%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .form-label {
+    font-size: 0.9rem;
+  }
+  .cvc {
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+  }
+  body .card .front .card-number {
+    font-size: 0.8rem;
+  }
+  body .card .front div .card-owner, body .card .front div .card-expire {
+    font-size: 12px;
+  }
+  body .card .front img {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  body .card .back p {
+    font-size: 12px;
+    top: 46.5%;
+    left: 80%;
+  }
+  body .card-info input {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  body .card-info {
+    gap: 0.6rem;
+  }
+  body .card .front img {
+    margin-top: 2.5rem;
+    margin-bottom: 1.2rem;
+  }
+  body .card .front .card-number {
+    font-size: 0.7rem;
+  }
+  body .card .front div .card-owner, body .card .front div .card-expire {
+    font-size: 10px;
+  }
+  body .card-info {
+    padding-left: 10.8rem;
+    padding-right: 4.8rem;
+  }
+  body .card-info input {
+    font-size: 0.8rem;
+  }
 }

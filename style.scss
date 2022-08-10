@@ -12,10 +12,22 @@ img{
   letter-spacing: 3px;
 }
 
-.warning{
+.warning-text{
   font-size: 12px;
   color: hsl(0, 100%, 66%);
   margin-top: 0.3rem ;
+}
+
+.btn-warning{
+  border: 2px solid hsl(0, 100%, 66%) !important;
+}
+
+.d-none{
+  display: none;
+}
+
+.d-block{
+  display: block;
 }
 
 input:focus{
@@ -164,10 +176,9 @@ body {
       }
     }
 
-    .cvc{
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+    .cvc label{
+      display: inline-block;
+      margin-bottom: 1rem;
     }
   }
 }

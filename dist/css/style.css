@@ -12,10 +12,22 @@ img {
   letter-spacing: 3px;
 }
 
-.warning {
+.warning-text {
   font-size: 12px;
   color: #ff5252;
   margin-top: 0.3rem;
+}
+
+.btn-warning {
+  border: 2px solid #ff5252 !important;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
 }
 
 input:focus {
@@ -162,8 +174,7 @@ body .card-info .exp-date-cvc .exp-date .exp-date-input input {
   width: 90%;
 }
 
-body .card-info .cvc {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+body .card-info .cvc label {
+  display: inline-block;
+  margin-bottom: 1rem;
 }

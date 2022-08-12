@@ -31,7 +31,7 @@
       <p id="card-cvc">000</p>
     </div>
   </div>
-  <div class="card-info">
+  <div id="card-info" class="card-info">
 
     <!-- CardHolder Name -->
     <label class="form-label" for="holder-name">Cardholder Name</label>
@@ -69,6 +69,15 @@
 
     <!-- Confirm Button -->
     <button id="confirm">Confirm</button>
+  </div>
+
+  <div id="complete-card-info" class="card-info complete-card-info d-none">
+    <div class="complete-image">
+      <img src="./images/icon-complete.svg" alt="Complete Image">
+    </div>
+    <h2>Thank you!</h2>
+    <p>We've added your card details</p>
+    <button id="continue">Continue</button>
   </div>
 
   <!-- Confirm -->

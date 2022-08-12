@@ -99,7 +99,6 @@ body .card .back {
   background-image: url(/images/bg-card-back.png);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
   margin-left: 24vw;
   position: relative;
 }
@@ -107,7 +106,7 @@ body .card .back {
 body .card .back p {
   position: absolute;
   top: 45.5%;
-  left: 78%;
+  left: 77%;
   color: white;
   font-size: 15px;
 }
@@ -212,12 +211,20 @@ body .complete-card-info p {
   body .card-info .exp-date-cvc {
     gap: 0.4rem;
   }
+  body .card .back p {
+    top: 40.5%;
+    left: 81%;
+  }
 }
 
 @media screen and (max-width: 1210px) {
   body .card-info {
     padding-left: 16rem;
     padding-right: 10rem;
+  }
+  body .card .back p {
+    top: 36.5%;
+    left: 79%;
   }
 }
 
@@ -237,8 +244,8 @@ body .complete-card-info p {
     margin-top: 1.2rem;
   }
   body .card .back p {
-    top: 45.5%;
-    left: 77%;
+    top: 34.5%;
+    left: 78%;
   }
 }
 
@@ -263,8 +270,8 @@ body .complete-card-info p {
   }
   body .card .back p {
     font-size: 12px;
-    top: 46.5%;
-    left: 80%;
+    top: 30%;
+    left: 79%;
   }
   body .card-info input {
     font-size: 0.9rem;
@@ -294,5 +301,82 @@ body .complete-card-info p {
   }
   body .card .front {
     margin-bottom: 0;
+  }
+  body .card .back p {
+    top: 26%;
+    left: 78%;
+    font-size: 11px;
+  }
+  body .card .front img {
+    width: 68px;
+    height: 39px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body .card-info {
+    padding-left: 7rem;
+    padding-right: 3rem;
+  }
+  body .card .front {
+    margin-left: 10vw;
+  }
+  body .card .back {
+    margin-left: 18vw;
+  }
+  body .card .front img {
+    width: 60px;
+    height: 33px;
+    margin-top: 3rem;
+  }
+  body .card .front .card-number {
+    font-size: 0.6rem;
+  }
+  body .card .front div .card-owner, body .card .front div .card-expire {
+    font-size: 9px;
+  }
+  body .card .back p {
+    top: 23%;
+    left: 77%;
+    font-size: 10px;
+  }
+  body .card-info input {
+    font-size: 0.7rem;
+  }
+  .form-label {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 685px) {
+  .let-space {
+    letter-spacing: 2px;
+  }
+  body .card .back p {
+    top: 21.5%;
+    left: 77%;
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  body .card .back p {
+    font-size: 8px;
+    top: 19.5%;
+  }
+  body .card .front div .card-owner, body .card .front div .card-expire {
+    font-size: 8px;
+  }
+  body .card .front .card-number {
+    font-size: 0.5rem;
+  }
+  body .card .front img {
+    width: 49px;
+    height: 27px;
+    margin-top: 3.6rem;
+  }
+  body .card-info {
+    padding-left: 6rem;
+    padding-right: 2rem;
   }
 }

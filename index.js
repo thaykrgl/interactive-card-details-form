@@ -7,6 +7,8 @@ $(document).ready(function () {
   let expDateMonthWarningDOM = document.getElementById("mm-warning");
   let expDateYearWarningDOM = document.getElementById("yy-warning");
   let cvcWarningDOM = document.getElementById("cvc-warning");
+  let cardInfoDOM = document.getElementById("card-info");
+  let completeCardInfoDOM = document.getElementById("complete-card-info");
 
 
   // CardHolder Name
@@ -94,10 +96,12 @@ $(document).ready(function () {
 
   // Confirm Button Click Event
   document.getElementById("confirm").addEventListener("click", function () {
+
+    let isSucceeded = true;
     if (!expDateMonthDOM.value) {
       expDateMonthWarningDOM.classList.remove("d-none");
       expDateMonthDOM.classList.add("btn-warning");
-
+      isSucceeded = false;
     }
     else {
       expDateMonthWarningDOM.classList.add("d-none");
@@ -120,7 +124,11 @@ $(document).ready(function () {
     else {
       cvcWarningDOM.classList.add("d-none");
       cvcDOM.classList.remove("btn-warning");
+    }
 
+    if (isSucceeded) {
+      completeCardInfoDOM.classList.remove("d-none");
+      cardInfoDOM.classList.add("d-none");
     }
   })
 

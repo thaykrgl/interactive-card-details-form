@@ -1,9 +1,12 @@
 $(document).ready(function () {
 
   let holderNumberDOM = document.getElementById("holder-number");
+  let holderNameDOM = document.getElementById("holder-name");
   let expDateMonthDOM = document.getElementById("exp-date-mm");
   let expDateYearDOM = document.getElementById("exp-date-yy");
   let cvcDOM = document.getElementById("cvc");
+  let cardHolderNameWarningDOM = document.getElementById("name-warning");
+  let cardNumberWarningDOM = document.getElementById("number-warning");
   let expDateMonthWarningDOM = document.getElementById("mm-warning");
   let expDateYearWarningDOM = document.getElementById("yy-warning");
   let cvcWarningDOM = document.getElementById("cvc-warning");
@@ -98,6 +101,26 @@ $(document).ready(function () {
   document.getElementById("confirm").addEventListener("click", function () {
 
     let isSucceeded = true;
+    if (!holderNameDOM.value) {
+      cardHolderNameWarningDOM.classList.remove("d-none");
+      holderNameDOM.classList.add("btn-warning");
+      isSucceeded = false;
+    }
+    else {
+      cardHolderNameWarningDOM.classList.add("d-none");
+      holderNameDOM.classList.remove("btn-warning");
+    }
+
+    if (!holderNumberDOM.value) {
+      cardNumberWarningDOM.classList.remove("d-none");
+      holderNumberDOM.classList.add("btn-warning");
+      isSucceeded = false;
+    }
+    else {
+      cardNumberWarningDOM.classList.add("d-none");
+      holderNumberDOM.classList.remove("btn-warning");
+    }
+
     if (!expDateMonthDOM.value) {
       expDateMonthWarningDOM.classList.remove("d-none");
       expDateMonthDOM.classList.add("btn-warning");
@@ -130,6 +153,12 @@ $(document).ready(function () {
       completeCardInfoDOM.classList.remove("d-none");
       cardInfoDOM.classList.add("d-none");
     }
+  })
+
+  // Continue Button Click Event
+  document.getElementById("continue").addEventListener("click", function () {
+    completeCardInfoDOM.classList.add("d-none");
+    cardInfoDOM.classList.remove("d-none");
   })
 
 })

@@ -23,16 +23,20 @@ img, input{
 }
 
 .d-none{
-  display: none;
+  display: none !important;
 }
 
 .d-block{
-  display: block;
+  display: block !important;
 }
 
 input:focus{
   border-color: hsl(249, 99%, 64%) !important;
   border-width: 2px !important;
+}
+
+.complete-card-info{
+  align-items: center;
 }
 
 body {
@@ -181,6 +185,25 @@ body {
       margin-bottom: 1rem;
     }
   }
+
+  .complete-card-info{
+    align-items: center;
+
+    .complete-image{
+      margin-bottom: 1rem;
+    }
+
+    h2{
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 0.2rem;
+    }
+
+    p{
+      font-size: 16px;
+      margin-bottom: 1.6rem;
+    }
+  }
 }
 
 // Media Queries
@@ -291,6 +314,10 @@ body {
 
   body .card-info input{
     font-size: 0.8rem;
+  }
+
+  body .card .front{
+    margin-bottom: 0;
   }
 }
 

@@ -37,7 +37,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Frontend Mentor](https://www.frontendmentor.io/profile/thaykrgl)
-- Live Site URL: [Github Pages](https://thaykrgl.github.io/interactive-rating-component/)
+- Live Site URL: [Netlify](https://interactive-card-details-fm.netlify.app/)
 
 ### Built with
 

@@ -1,6 +1,6 @@
 # Frontend Mentor - Interactive Card Details Form
 
-This is a solution to the [Interactive Card Details Form on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI).
+This is a solution to the [Interactive Card Details Form on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw).
 
 ## Table of contents
 
@@ -17,33 +17,34 @@ This is a solution to the [Interactive Card Details Form on Frontend Mentor](htt
 
 Users should be able to:
 
-- Select and submit a number rating
-- See the "Thank you" card state after submitting a rating
-- View the optimal layout for the app depending on their device's - screen size
-- See hover states for all interactive elements on the page
+- Fill in the form and see the card details update in real-time
+- Receive error messages when the form is submitted if:
+- Any input field is empty
+- The card number, expiry date, or CVC fields are in the wrong format
+- View the optimal layout depending on their device's screen size
+- See hover, active, and focus states for interactive elements on the page
 
 ### Screenshots
 
 #### Desktop View
 
-
+<img src="./images/interactive-card-details-desktop.png" alt="Desktop View">
 
 #### Mobile View
 
-
+<img src="./images/interactive-card-details-mobile.png" alt="Desktop View">
 
 ### Links
 
 - Solution URL: [Frontend Mentor](https://www.frontendmentor.io/profile/thaykrgl)
 - Live Site URL: [Github Pages](https://thaykrgl.github.io/interactive-rating-component/)
 
-## My process
-
 ### Built with
 
 - Semantic HTML5 markup
 - Mobile-first workflow
 - Font Awesome
+- SASS
 - Flexbox
 - Media Queries
 - Google Fonts

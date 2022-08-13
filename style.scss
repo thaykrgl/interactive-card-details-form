@@ -424,3 +424,135 @@ body {
   }
 }
 
+@media screen and (max-width:576px){
+  body{
+    flex-direction: column;
+  }
+
+  body .card{
+    min-height: 0px;
+    position: relative;
+  }
+
+  body .card .back{
+    width: 280px;
+    height: 145px;
+    min-width: 0px;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    position: static;
+  }
+
+  body .card .front{
+    order: 2;
+    background-position: left;
+    padding: 0 0 1rem 1.4rem;
+    margin-left: 0;
+    width: 280px;
+    height: 145px;
+    min-width: 0px;
+    position: absolute;
+    top:50%;
+  }
+
+  body .card-info{
+    margin-top: 5rem;
+    padding: 0 2rem;
+  }
+
+  body .card .front img{
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+  }
+
+  body .card .front .card-number{
+    font-size: 1rem;
+  }
+
+  body .card .front div .card-owner{
+    font-size: 10px;
+  }
+
+  body .card .front div{
+    justify-content: flex-start;
+    gap: 13vw;
+  }
+
+  .cvc{
+    width: 250px;
+  }
+
+  .form-label{
+    font-size: 0.8rem;
+  }
+
+  body .card-info input{
+    font-size: 1rem;
+  }
+
+  body .card .back p {
+    font-size: 10px;
+    top: 42.5%;
+    left: 72.5%;
+  }
+}
+
+@media screen and (max-width:480px){
+  .cvc{
+    width: 150px;
+  }
+
+  body .card .back p {
+    top: 42.5%;
+    left: 75.5%;
+  }
+
+  body .card .front div{
+    gap: 18vw;
+  }
+}
+
+@media screen and (max-width:370px){
+  body .card-info{
+    padding: 0 1rem;
+    margin-top: 4rem;
+  }
+
+  body .card .back p {
+    font-size: 10px;
+    top: 42.5%;
+    left: 75.5%;
+  }
+
+  body .card .back {
+    width: 240px;
+    height: 125px;
+  }
+
+  body .card .front{
+    width: 240px;
+    height: 125px;
+    padding: 0 0 0.5rem 1.2rem;
+  }
+
+  .form-label{
+    font-size: 0.7rem;
+  }
+
+  body .card-info input{
+    font-size: 0.9rem;
+  }
+
+  body .card .front img{
+    margin-bottom: 1.5rem;
+  }
+
+  body .card .front .card-number{
+    font-size: 0.8rem;
+  }
+
+  body .card .front div .card-owner{
+    font-size: 9px;
+  }
+}
+
